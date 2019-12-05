@@ -1,0 +1,35 @@
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    background-color: #007bff;
+    align-items: stretch;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 4em;
+    height: 4em;
+    padding: .5em;
+}
+
+h1 {
+    font-size: 2em;
+    align-self: flex-end;
+    margin-right: 1em;
+}
+
+h2 {
+    font-size: 1.3em;
+    align-self: flex-end;
+}
+
+p {
+    align-self: flex-start;
+    margin-right: 1em;
+}

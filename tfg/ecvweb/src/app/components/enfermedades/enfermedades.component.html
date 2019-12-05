@@ -1,0 +1,20 @@
+<app-menu></app-menu>
+
+<h3>Listado de patologías</h3>
+
+<button type="button" class="btn btn-success" routerLink="/nueva_enfermedad">Añadir patología</button>
+
+<div class="contenedor">
+    <div>
+        <h4>Patologías</h4>
+        <div class="list-group" *ngFor="let enfermedad of enfermedades1">
+            <a (click)="seleccionar(enfermedad.id_enfermedad);" class="list-group-item list-group-item-action">{{ enfermedad.nombre_enfermedad }}</a>
+        </div>
+    </div>
+
+    <div>
+        <h4>Descripción</h4>
+        <p>{{ descrp }}</p>
+        <button class="btn btn-danger" (click)="eliminar();">Eliminar</button>
+    </div>
+</div>

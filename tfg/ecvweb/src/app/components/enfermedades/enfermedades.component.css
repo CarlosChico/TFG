@@ -1,0 +1,35 @@
+h3 {
+    text-align: center;
+    margin: 1.5em 0 2em 0;
+}
+
+.btn-success {
+    margin: 0 0 2em 3.6em;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+}
+
+.list-group>a:hover {
+    color: aliceblue;
+}
+
+.list-group-item:hover {
+    background-color: #007bff;
+}
+
+.contenedor>div:first-child a {
+    width: 30em;
+    margin-bottom: .5em;
+}
+
+.contenedor>div:nth-child(2) {
+    margin-left: 1em;
+    width: 50em;
+    text-justify: inter-word;
+}

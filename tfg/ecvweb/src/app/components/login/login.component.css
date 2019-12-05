@@ -1,0 +1,34 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 1.5em 0 2em 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-self: center;
+    margin-top: 2em;
+}
+
+form>div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form>div:last-child>button {
+    width: 8em;
+    align-self: flex-start;
+}
+
+form>div:last-child>a {
+    align-self: flex-end;
+}

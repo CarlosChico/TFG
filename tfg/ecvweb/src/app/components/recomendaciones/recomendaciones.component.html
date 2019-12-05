@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+
+<h3>Recomendaciones</h3>
+<button type="button" class="btn btn-success" routerLink="/nueva_recomendacion">Añadir recomendación</button>
+
+<div class="contenedor">
+    <div class="card" style="width:400px" *ngFor="let recomendacion of recomendaciones">
+        <img class="card-img-top" src="../../../assets/recomendaciones/{{recomendacion.img}}" alt="Recomendacion imagen" style="width:100%;">
+        <div class="card-body">
+            <h4 class="card-title">{{ recomendacion.titulo }}</h4>
+            <p class="card-text">{{ recomendacion.descripcion }}</p>
+        </div>
+        <div>
+            <a class="btn btn-primary" routerLink="/modificar_medicacion">Editar</a>
+            <a class="btn btn-danger" (click)="eliminar(recomendacion.id_recomendacion);">Eliminar</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="login">
+    <h3>Inicio de sesión</h3>
+
+
+    <form>
+        <div class="form-group">
+            <label for="colegiado">Colegiado</label>
+            <input type="number" [(ngModel)]="formulario.colegiado" name="colegiado" class="form-control" id="colegiado" aria-describedby="emailHelp" placeholder="Introduce tu número de colegiado">
+            <small id="emailHelp" class="form-text text-muted">Este número es único e identificativo.</small>
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" [(ngModel)]="formulario.contrasena" name="contrasena" class="form-control" id="contrasena" placeholder="Contraseña">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" (click)="login();" routerLink="/pacientes">Inicio</button>
+            <a routerLink="/registro">Regístrate</a>
+        </div>
+
+    </form>
+</div>

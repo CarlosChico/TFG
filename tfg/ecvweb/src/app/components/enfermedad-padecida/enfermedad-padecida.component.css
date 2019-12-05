@@ -1,0 +1,10 @@
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: .5em;
+}
+
+p {
+    margin-right: 1em;
+}

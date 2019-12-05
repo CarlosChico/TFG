@@ -1,0 +1,8 @@
+<p><strong>Umbral de LPM (mínimo - máximo): </strong>{{ inferior }} - {{ superior }}</p>
+<p><strong>Registros fuera del umbral</strong></p>
+<ul *ngFor="let ritmo of ritmos" class="list-group list-group-flush" ng-controller="datCtrl">
+    <li class="list-group-item">
+        <p><strong>LPM: </strong>{{ritmo.ritmo}}</p>
+        <p><strong>Fecha: </strong>{{ritmo.fecha | date:'d/M/yyyy H:mm:ss' : 'UTC'}}</p>
+    </li>
+</ul>

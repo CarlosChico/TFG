@@ -1,0 +1,21 @@
+<app-menu>
+</app-menu>
+
+<h3>Listado de medicaciones</h3>
+<button type="button" class="btn btn-success" routerLink="/nueva_medicacion">Añadir medicación</button>
+
+<div class="contenedor">
+    <div class="card" style="width:400px" *ngFor="let medicacion of medicaciones">
+        <img class="card-img-top" src="../../../assets/medicaciones/{{ medicacion.img }}" alt="Medicacion imagen" style="width:100%; height:30%;">
+        <div class="card-body">
+            <h4 class="card-title">{{ medicacion.nombre }}</h4>
+            <p class="card-text">{{ medicacion.descripcion }}</p>
+            <p><strong>Efectos adversos</strong></p>
+            <p class="card-text">{{ medicacion.efectos_adversos }}</p>
+        </div>
+        <div>
+            <a class="btn btn-primary" (click)="modificar(medicacion.id_medicacion);" routerLink="/modificar_medicacion">Editar</a>
+            <a class="btn btn-danger" (click)="eliminar(medicacion.id_medicacion);">Eliminar</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.menu>ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: #2B809A;
+}
+
+.menu>ul>li {
+    flex-direction: row;
+    padding: .3em;
+    padding-left: .4em;
+    padding-right: .4em;
+    color: aliceblue;
+}
+
+.menu>ul>li:hover {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.menu>ul>li:last-child {
+    padding-right: 1.5em;
+}

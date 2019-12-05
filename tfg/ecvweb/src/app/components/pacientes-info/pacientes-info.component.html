@@ -1,0 +1,21 @@
+<app-menu>
+</app-menu>
+<h3>Detalles del paciente</h3>
+
+<div class="cuerpo">
+    <div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>SIP: </strong>{{ paciente.sip }}</li>
+            <li class="list-group-item"><strong>Nombre: </strong>{{ paciente.nombre }}</li>
+            <li class="list-group-item"><strong>Apellidos: </strong>{{ paciente.apellidos }}</li>
+            <li class="list-group-item"><strong>Peso: </strong>{{ paciente.peso }}</li>
+            <li class="list-group-item"><strong>Edad: </strong>{{ paciente.edad }}</li>
+            <li class="list-group-item"><strong>Genero: </strong>{{ paciente.genero }}</li>
+        </ul>
+        <app-enfermedad-padecida></app-enfermedad-padecida>
+    </div>
+
+    <div>
+        <app-ritmos></app-ritmos>
+    </div>
+</div>

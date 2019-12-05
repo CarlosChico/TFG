@@ -1,0 +1,25 @@
+h3 {
+    margin: 1em;
+    margin: 1.5em 0 2em 0;
+    text-align: center;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Cuerpo>div:first-child>div {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin-bottom: 2em;
+}
+
+div>div:last-child {
+    display: flex;
+    flex-direction: column;
+}
