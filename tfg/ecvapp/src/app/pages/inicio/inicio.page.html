@@ -1,0 +1,47 @@
+<ion-header no-border>
+  <div>
+    <ion-img src="../../assets/icono.png" slot="start" style="height: 30%; width: 30%;"></ion-img>
+    <h1>ECV Monitoring</h1>
+  </div>
+  <h2>Monitorización de pacientes con pulseras inteligentes</h2>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <ion-item *ngFor="let com of componentes" detail [routerLink]="com.redirectTo">
+      <ion-icon slot="start" [name]="com.icon"></ion-icon>
+      <ion-label>{{ com.name }}</ion-label>
+    </ion-item>
+  </ion-list> -->
+
+  <h3>Inicio de sesión</h3>
+
+
+
+  <form padding>
+
+      <ion-item>
+        <ion-label position="floating">SIP</ion-label>
+        <ion-input type="text" [(ngModel)]="paciente.sip" name="sip" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+      
+      <div class="login">
+          <ion-button 
+          (click)="onSubmit();"
+          color="primary"
+          routerLink="/tabs/principal">Login</ion-button>
+      </div>
+      
+  </form>
+
+  <p>¿No eres miembro?</p>
+
+  <div class="enlace">
+    <a routerLink="/registro">Regístrate aquí</a>
+  </div>
+
+</ion-content>

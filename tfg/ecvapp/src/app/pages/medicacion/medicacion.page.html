@@ -1,0 +1,39 @@
+<app-header titulo="medicación"></app-header>
+
+<ion-content>
+
+        <h3 padding>Recordatorio</h3>
+
+        <ion-item>
+            <ion-label>Seleccionar hora de recordatorio</ion-label>
+            <ion-datetime display-format="H:m" picker-format="H:m" value="1990-02-19T07:43Z" color="medium"></ion-datetime>
+        </ion-item>
+
+        <!-- <ion-card color="medium">  
+            <img src="../assets/medicaciones/{{medicacion.img}}"/>
+
+            <ion-card-header class="ion-align-self-center">
+                <ion-card-subtitle> Patología: {{ enfermedad.nombre_enfermedad }}</ion-card-subtitle>
+                <ion-card-title>{{ medicacion.nombre }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Descripción</ion-card-content>
+            <ion-card-content class="ion-align-self-end">{{ medicacion.descripcion }}</ion-card-content>
+            <ion-card-content>Efectos adversos</ion-card-content>
+            <ion-card-content class="ion-align-self-end">{{ medicacion.efectos_adversos }}</ion-card-content>
+        </ion-card> -->
+
+
+        <ion-card color="medium">  
+            <img src="../assets/medicaciones/heparina.jpg"/>
+
+            <ion-card-header class="ion-align-self-center">
+                <ion-card-subtitle> Patología: Aneurisma de aorta</ion-card-subtitle>
+                <ion-card-title>Heparina</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Descripción</ion-card-content>
+            <ion-card-content class="ion-align-self-end">Sustancia anticoagulante natural que existe normalmente en todos los tejidos del cuerpo humano, especialmente en el hígado, los pulmones y los músculos.</ion-card-content>
+            <ion-card-content>Efectos adversos</ion-card-content>
+            <ion-card-content class="ion-align-self-end">Se pueden producir moretones, dolores musculares, caída del cabello. Raramente se puede dar sangrado en la orina o vómitos</ion-card-content>
+        </ion-card>
+
+</ion-content>

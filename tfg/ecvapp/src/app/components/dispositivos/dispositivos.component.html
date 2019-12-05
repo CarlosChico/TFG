@@ -1,0 +1,6 @@
+<ion-button class="buscarbtn" large expand="full" fill="solid" shape="round" padding (click)="buscar();">Buscar pulsera</ion-button>
+<ion-list *ngFor="let dis of dispositivos" padding>
+    <ion-item (click)="seleccionar(dis.name,dis.id);">{{ dis.name }}  {{ dis.id }}</ion-item>
+</ion-list>
+<ion-button class="vincularbtn" large expand="full" fill="solid" shape="round" padding (click)="vinculado();">Empezar a monitorizar</ion-button>
+<p>{{name}} {{id}}</p>

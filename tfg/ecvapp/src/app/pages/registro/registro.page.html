@@ -1,0 +1,66 @@
+<ion-header no-border>
+    <div>
+      <ion-img src="../../assets/icono.png" slot="start" style="height: 30%; width: 30%;"></ion-img>
+      <h1>ECV Monitoring</h1>
+    </div>
+    <h2>Monitorización de pacientes con pulseras inteligentes</h2>
+  </ion-header>
+
+<ion-content>
+
+  <h3>Registro</h3>
+
+    <form padding>
+
+        <ion-item>
+          <ion-label position="floating">SIP</ion-label>
+          <ion-input type="number" [(ngModel)]="paciente.sip" name="sip" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="paciente.nombre" name="nombre" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellidos</ion-label>
+          <ion-input type="text" [(ngModel)]="paciente.apellidos" name="apellidos" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Edad</ion-label>
+          <ion-input type="number" [(ngModel)]="paciente.edad" name="edad" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Peso</ion-label>
+          <ion-input type="number" [(ngModel)]="paciente.peso" name="peso" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Género</ion-label>
+          <ion-select [(ngModel)]="paciente.genero" name="genero">
+            <ion-select-option value="hombre">Hombre</ion-select-option>
+            <ion-select-option value="mujer">Mujer</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="paciente.pwd" name="pwd" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Repetir contraseña</ion-label>
+          <ion-input type="password" required></ion-input>
+        </ion-item>
+        
+        <div class="login">
+            <ion-button 
+            (click)="onSumbit()"
+            color="primary" 
+            routerLink="/tabs/principal">Registrarme</ion-button>
+        </div>
+        
+    </form>
+
+    <div class="volver">
+      <a routerLink="/inicio">Ya tengo una cuenta</a>
+    </div>
+    
+</ion-content>
+
+

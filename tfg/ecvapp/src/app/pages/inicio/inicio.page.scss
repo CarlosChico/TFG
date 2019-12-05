@@ -1,0 +1,58 @@
+ion-header{
+    color: aliceblue;
+    background-color: #31708E;
+}
+
+ion-content{
+    background-color: #F7F9FB;
+}
+ion-header > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ion-img{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+
+ion-header  h2{
+    text-align: center;
+    font-size: .9em;
+}
+
+ion-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    margin-top: 5em;
+    text-align: center;
+    align-self: flex-start;
+}
+
+form{
+    margin-top: 2em;
+    align-self: center;
+}
+
+.login{
+    margin: 3em 0 2em 0;
+    text-align: center;
+}
+ion-button{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    align-self: flex-end;
+}
+.enlace{
+    text-align: center;
+    align-self: center;
+}

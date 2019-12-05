@@ -1,0 +1,29 @@
+ion-grid{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+ion-col{
+    padding: 0;
+}
+
+:host{
+    ion-button{
+        width : 80%;
+        margin: 4em 0;
+    }
+}
+
+ion-label{
+    text-align: center;
+}
+div{
+    padding-right: 0;
+}
+
+p{
+    font-size: .8em;
+}
+
